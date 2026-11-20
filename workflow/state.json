@@ -1,0 +1,10 @@
+{
+  "initiative": "Customer feedback to product decision",
+  "stage": "intake",
+  "owner": "Product Manager",
+  "evidence_level": "simulated",
+  "status": "in_progress",
+  "gate": "Problem and impact are clear enough for evidence collection",
+  "next_action": "Complete the problem brief",
+  "updated_at": "2026-11-20"
+}

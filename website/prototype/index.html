@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="PM Decision Flow 的 Axure 交付规范与原型状态清单。"
+    >
+    <title>Axure 交付 | PM Decision Flow</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="../">
+          <span class="brand-mark">PM</span>
+          <span>PM Decision Flow</span>
+        </a>
+        <nav class="site-nav" aria-label="主导航">
+          <a href="../workflow/">工作流</a>
+          <a href="../case-study/">案例</a>
+          <a href="../templates/">模板</a>
+          <a href="./" aria-current="page">Axure</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="page-wrap">
+          <p class="kicker">PROTOTYPE HANDOFF</p>
+          <h1 class="page-title">用 Axure 表达权限、状态和异常流程</h1>
+          <p class="page-lead">
+            GitHub 不能直接预览 Axure 源文件，因此最终交付必须同时包含可编辑源文件、HTML、关键截图和说明。
+          </p>
+        </div>
+      </section>
+
+      <article class="content page-wrap">
+        <h2>必做页面</h2>
+        <ol>
+          <li>带客户和时间筛选的反馈列表。</li>
+          <li>导出入口与字段说明。</li>
+          <li>无权限状态。</li>
+          <li>处理中状态。</li>
+          <li>下载完成状态。</li>
+          <li>失败与安全重试状态。</li>
+        </ol>
+
+        <h2>关键交互</h2>
+        <ul>
+          <li>导出确认页保留当前客户和日期范围。</li>
+          <li>无权限用户不能开始导出。</li>
+          <li>确认页显示包含字段和内部备注排除规则。</li>
+          <li>处理中状态可以迁移到完成或失败。</li>
+          <li>失败状态说明原因并允许安全重试。</li>
+        </ul>
+
+        <h2>交付结构</h2>
+        <pre><code>prototype/
+|-- source/pm-decision-flow.rp
+|-- html/
+|-- screens/
+`-- notes.md</code></pre>
+
+        <h2>发布规则</h2>
+        <ul>
+          <li>不上传假截图或复制付费模板。</li>
+          <li>不放真实客户数据。</li>
+          <li>HTML 导出必须可以本地打开。</li>
+          <li>完成后从案例页和仓库 README 链接可点击原型。</li>
+        </ul>
+
+        <div class="callout">
+          <strong>当前状态：</strong>
+          V0.1 只保留 Axure 交付规范，不声称原型已经完成。Axure 原型是下一阶段产物。
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>Axure 交付规范</p>
+        <p><a href="../">返回首页</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

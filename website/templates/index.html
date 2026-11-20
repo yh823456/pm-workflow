@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="PM Decision Flow 的五个轻量模板与使用原则。"
+    >
+    <title>模板 | PM Decision Flow</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="../">
+          <span class="brand-mark">PM</span>
+          <span>PM Decision Flow</span>
+        </a>
+        <nav class="site-nav" aria-label="主导航">
+          <a href="../workflow/">工作流</a>
+          <a href="../case-study/">案例</a>
+          <a href="./" aria-current="page">模板</a>
+          <a href="../prototype/">Axure</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="page-wrap">
+          <p class="kicker">FIVE COPY-READY TEMPLATES</p>
+          <h1 class="page-title">模板不是文档负担，而是判断检查点</h1>
+          <p class="page-lead">
+            每个阶段只有一份主模板。先完成最小版本，再根据风险增加证据、设计或验证深度。
+          </p>
+        </div>
+      </section>
+
+      <article class="content page-wrap">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>模板</th>
+                <th>用于</th>
+                <th>关键要求</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>问题说明</td>
+                <td>接收模糊请求</td>
+                <td>用户、场景、问题、影响、证据缺口</td>
+              </tr>
+              <tr>
+                <td>证据日志</td>
+                <td>判断问题是否真实</td>
+                <td>每条信息标记 FACT、ASSUMPTION 或 SIMULATED</td>
+              </tr>
+              <tr>
+                <td>决策记录</td>
+                <td>明确做或不做</td>
+                <td>至少三个备选方案和取舍</td>
+              </tr>
+              <tr>
+                <td>轻量 PRD</td>
+                <td>推动设计和研发</td>
+                <td>范围、非目标、验收和指标</td>
+              </tr>
+              <tr>
+                <td>结果复盘</td>
+                <td>关闭反馈闭环</td>
+                <td>基线、目标、实际和决定</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>使用原则</h2>
+        <ul>
+          <li>先写最简版本，再根据风险增加深度。</li>
+          <li>无法说明用户和问题时不写 PRD。</li>
+          <li>无法说明证据来源时，不使用“用户需要”作为结论。</li>
+          <li>无法测量时明确写“不可用”，不补造数据。</li>
+          <li>一份模板只对应一个 initiative，不混合多个需求。</li>
+        </ul>
+
+        <h2>推荐使用节奏</h2>
+        <ol class="steps-list">
+          <li>收到请求后，用 20 至 40 分钟完成问题说明。</li>
+          <li>先收集已有数据、访谈、工单和公开资料。</li>
+          <li>用 1 至 2 小时形成决策记录。</li>
+          <li>决策通过后，再写轻量 PRD 和验收标准。</li>
+          <li>上线后按预设窗口填写结果复盘。</li>
+        </ol>
+
+        <div class="callout">
+          <strong>模板位置：</strong>
+          仓库中的 <code>templates/</code> 目录包含五份可直接复制的 Markdown 模板。
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>最小模板，明确判断。</p>
+        <p><a href="../">返回首页</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
