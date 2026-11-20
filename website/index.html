@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="A five-stage product management workflow for turning ambiguous requests into evidence, decisions, and PRDs."
+    >
+    <title>PM Decision Flow</title>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="./">
+          <span class="brand-mark">PM</span>
+          <span>PM Decision Flow</span>
+        </a>
+        <nav class="site-nav" aria-label="主导航">
+          <a href="workflow/" aria-current="page">工作流</a>
+          <a href="case-study/">案例</a>
+          <a href="templates/">模板</a>
+          <a href="prototype/">Axure</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="page-wrap">
+      <section class="home-hero">
+        <div>
+          <p class="kicker">PRODUCT MANAGEMENT WORKFLOW</p>
+          <h1 class="home-title">把模糊需求变成可验证的产品决策</h1>
+          <p class="home-lead">
+            一套五阶段的 B 端 SaaS 产品工作流。它先确认问题和证据，再决定是否做，最后用 PRD 和结果验证形成闭环。
+          </p>
+          <div class="actions">
+            <a class="button-primary" href="workflow/">开始使用</a>
+            <a class="button-secondary" href="case-study/">查看模拟案例</a>
+          </div>
+          <p class="boundary-note">
+            旗舰案例使用模拟访谈，已明确标记为未经验证。它用于练习判断流程，不用于宣称真实市场需求或业务收益。
+          </p>
+        </div>
+
+        <div class="artifact" aria-label="工作流状态示例">
+          <div class="artifact-bar">
+            <span>workflow/state.json</span>
+            <span>intake</span>
+          </div>
+          <pre>{
+  <span class="key">"initiative"</span>: <span class="value">"Customer feedback to decision"</span>,
+  <span class="key">"owner"</span>: <span class="value">"Product Manager"</span>,
+  <span class="key">"evidence_level"</span>: <span class="value">"simulated"</span>,
+  <span class="key">"status"</span>: <span class="value">"in_progress"</span>,
+  <span class="key">"gate"</span>: <span class="value">"Problem and impact are clear"</span>,
+  <span class="key">"next_action"</span>: <span class="value">"Complete problem brief"</span>
+}</pre>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-intro">
+          <h2>五个阶段，一个判断链</h2>
+          <p>
+            每个阶段只保留一个主产物和一个通过条件。小需求可以快速通过，高风险需求才需要补充更多证据。
+          </p>
+        </div>
+        <div class="flow-grid">
+          <article class="flow-step">
+            <span class="flow-index">01 / INTAKE</span>
+            <h3>接收</h3>
+            <p>确认用户、场景、问题、影响和当前替代方案。</p>
+          </article>
+          <article class="flow-step">
+            <span class="flow-index">02 / EVIDENCE</span>
+            <h3>证据</h3>
+            <p>区分事实、假设和模拟信息，记录矛盾和缺口。</p>
+          </article>
+          <article class="flow-step">
+            <span class="flow-index">03 / DECISION</span>
+            <h3>决策</h3>
+            <p>比较至少三个选项，记录继续、调整、延迟或停止。</p>
+          </article>
+          <article class="flow-step">
+            <span class="flow-index">04 / PRD</span>
+            <h3>轻量 PRD</h3>
+            <p>定义范围、非目标、验收标准、风险和指标。</p>
+          </article>
+          <article class="flow-step">
+            <span class="flow-index">05 / VERIFY</span>
+            <h3>验证</h3>
+            <p>比较观察结果和原始假设，决定下一步。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="two-column">
+          <div>
+            <h2>今天就可以开始</h2>
+            <ol class="steps-list">
+              <li>复制问题说明模板，把原始请求改写成具体问题。</li>
+              <li>记录已有证据，不允许把熟悉感当作事实。</li>
+              <li>比较替代方案，明确什么不做以及为什么。</li>
+              <li>形成研发和设计可以执行的轻量 PRD。</li>
+              <li>上线后填写结果复盘，不编造数据。</li>
+            </ol>
+          </div>
+          <aside class="aside-panel">
+            <strong>V0.1 的使用边界</strong>
+            <p>
+              本版本不包含 Dify、Coze、后端服务或自动生成结论。它首先是一套可以手动运行、可审计的 PM 判断流程。
+            </p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>V0.1 实践版。模拟案例未经外部验证。</p>
+        <p>MIT License</p>
+      </div>
+    </footer>
+  </body>
+</html>

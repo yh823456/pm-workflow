@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="B 端 SaaS 客户反馈与产品决策平台的模拟产品经理案例。"
+    >
+    <title>B 端 SaaS 案例 | PM Decision Flow</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="../">
+          <span class="brand-mark">PM</span>
+          <span>PM Decision Flow</span>
+        </a>
+        <nav class="site-nav" aria-label="主导航">
+          <a href="../workflow/">工作流</a>
+          <a href="./" aria-current="page">案例</a>
+          <a href="../templates/">模板</a>
+          <a href="../prototype/">Axure</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="page-wrap">
+          <p class="kicker">SIMULATED B2B SAAS CASE</p>
+          <h1 class="page-title">从“增加批量导出”到可验证的产品决策</h1>
+          <p class="page-lead">
+            一个面向成长型 B 端 SaaS 公司的模拟案例，展示如何将客户成功负责人的请求拆成问题、证据、决策、PRD 和验证计划。
+          </p>
+          <div class="badge-row">
+            <span class="badge">SIMULATED CASE</span>
+            <span class="badge">NOT EXTERNALLY VALIDATED</span>
+            <span class="badge">B2B SaaS</span>
+          </div>
+        </div>
+      </section>
+
+      <article class="content page-wrap">
+        <div class="callout">
+          <strong>模拟声明：</strong>
+          公司、用户、访谈、引用和数据均为虚构内容。该案例不能证明真实市场需求或产品收益。
+        </div>
+
+        <h2>场景</h2>
+        <p>
+          Harborline Systems 是一家虚构的 160 人 B 端 SaaS 公司。客户成功负责人提出：“增加批量导出，因为准备客户复盘包太花时间。”
+        </p>
+        <p>产品经理需要判断：</p>
+        <ul>
+          <li>这是不是真实且共性的工作问题？</li>
+          <li>批量导出是不是正确方案？</li>
+          <li>最小可验证范围是什么？</li>
+          <li>上线后应该观察哪些结果？</li>
+        </ul>
+
+        <h2>证据结论</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>证据</th>
+                <th>标签</th>
+                <th>支持什么</th>
+                <th>限制</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>B 端产品的导出通常需要权限控制</td>
+                <td><code>FACT</code></td>
+                <td>治理要求合理</td>
+                <td>不能证明此需求真实</td>
+              </tr>
+              <tr>
+                <td>模拟客户成功经理需要按客户和时间筛选</td>
+                <td><code>SIMULATED</code></td>
+                <td>筛选是核心步骤</td>
+                <td>虚构访谈，未经外部验证</td>
+              </tr>
+              <tr>
+                <td>用户仍需要手动解释和排版</td>
+                <td><code>SIMULATED</code></td>
+                <td>CSV 可能不是完整解决方案</td>
+                <td>只来自单一模拟场景</td>
+              </tr>
+              <tr>
+                <td>筛选导出会减少准备时间</td>
+                <td><code>ASSUMPTION</code></td>
+                <td>形成待验证假设</td>
+                <td>尚无实际时间研究</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>决策</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>选项</th>
+                <th>价值</th>
+                <th>风险</th>
+                <th>结论</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>无限制批量导出</td>
+                <td>覆盖广</td>
+                <td>权限和敏感字段风险高</td>
+                <td>不采用</td>
+              </tr>
+              <tr>
+                <td>带权限的筛选导出</td>
+                <td>验证核心工作流</td>
+                <td>仍不能解决排版</td>
+                <td>最小测试方案</td>
+              </tr>
+              <tr>
+                <td>定时或格式化报告</td>
+                <td>更接近最终产物</td>
+                <td>范围大，需求假设更多</td>
+                <td>延后验证</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>轻量 PRD 范围</h2>
+        <h3>In Scope</h3>
+        <ul>
+          <li>导出当前客户和日期筛选结果。</li>
+          <li>排除内部备注。</li>
+          <li>遵循现有角色和客户权限。</li>
+          <li>提供处理中、完成和失败状态。</li>
+        </ul>
+        <h3>Non-goals</h3>
+        <ul>
+          <li>PDF、幻灯片或自动排版。</li>
+          <li>定时报告和客户公开分享。</li>
+          <li>自定义报告构建器。</li>
+        </ul>
+
+        <h2>结果验证</h2>
+        <p>
+          观察窗口设为发布后 30 天或完成 20 次导出。主要观察准备时间、导出完成率、未授权字段事件和重复使用情况。
+        </p>
+        <div class="callout">
+          这些只是目标与观测计划，不是已经发生的结果。V0.1 不虚构 ROI、收入节省或客户反馈。
+        </div>
+
+        <h2>案例产物链</h2>
+        <p>
+          完整的问题说明、证据日志、决策记录、轻量 PRD 和结果计划位于仓库
+          <code>case-study/customer-feedback-platform/</code>。
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>模拟案例，未经外部验证。</p>
+        <p><a href="../">返回首页</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

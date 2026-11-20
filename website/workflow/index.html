@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="五阶段 PM 决策工作流：接收、证据、决策、轻量 PRD、验证。"
+    >
+    <title>五阶段工作流 | PM Decision Flow</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="../">
+          <span class="brand-mark">PM</span>
+          <span>PM Decision Flow</span>
+        </a>
+        <nav class="site-nav" aria-label="主导航">
+          <a href="./" aria-current="page">工作流</a>
+          <a href="../case-study/">案例</a>
+          <a href="../templates/">模板</a>
+          <a href="../prototype/">Axure</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="page-wrap">
+          <p class="kicker">FIVE-STAGE DECISION LOOP</p>
+          <h1 class="page-title">五阶段 PM 决策工作流</h1>
+          <p class="page-lead">
+            这套流程解决一个具体问题：团队在没有确认问题、证据和取舍时，就把需求推进到设计或研发，最终造成返工。
+          </p>
+        </div>
+      </section>
+
+      <article class="content page-wrap">
+        <div class="artifact-chain" aria-label="产物链">
+          <div class="chain-step"><span>01</span><strong>问题说明</strong></div>
+          <div class="chain-step"><span>02</span><strong>证据日志</strong></div>
+          <div class="chain-step"><span>03</span><strong>决策记录</strong></div>
+          <div class="chain-step"><span>04</span><strong>轻量 PRD</strong></div>
+          <div class="chain-step"><span>05</span><strong>结果复盘</strong></div>
+        </div>
+
+        <h2>每个阶段只回答一个核心问题</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>阶段</th>
+                <th>核心问题</th>
+                <th>主产物</th>
+                <th>通过条件</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01 接收</td>
+                <td>用户为什么需要改变？</td>
+                <td>问题说明</td>
+                <td>不是直接接受解决方案</td>
+              </tr>
+              <tr>
+                <td>02 证据</td>
+                <td>哪些信息可以验证？</td>
+                <td>证据日志</td>
+                <td>标签、矛盾和缺口清楚</td>
+              </tr>
+              <tr>
+                <td>03 决策</td>
+                <td>为什么选择这条路径？</td>
+                <td>决策记录</td>
+                <td>替代方案和取舍明确</td>
+              </tr>
+              <tr>
+                <td>04 PRD</td>
+                <td>最小可执行范围是什么？</td>
+                <td>轻量 PRD</td>
+                <td>设计研发可以执行</td>
+              </tr>
+              <tr>
+                <td>05 验证</td>
+                <td>是否产生预期变化？</td>
+                <td>结果复盘</td>
+                <td>有继续、调整或停止结论</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>实际使用顺序</h2>
+        <ol>
+          <li>修改 <code>workflow/state.json</code> 中的当前 initiative。</li>
+          <li>打开对应的 Skill 文件，确认输入和通过条件。</li>
+          <li>复制 <code>templates/</code> 中的模板完成主产物。</li>
+          <li>每次证据或决策变化，在 <code>workflow/log.md</code> 增加记录。</li>
+          <li>不满足通过条件时，不进入下一阶段。</li>
+        </ol>
+
+        <h2 id="evidence">证据等级</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>标签</th>
+                <th>含义</th>
+                <th>可以证明什么</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>FACT</code></td>
+                <td>可核验的数据、文档或行为</td>
+                <td>支持具体的事实判断</td>
+              </tr>
+              <tr>
+                <td><code>ASSUMPTION</code></td>
+                <td>当前推断</td>
+                <td>只能用于提出待验证假设</td>
+              </tr>
+              <tr>
+                <td><code>SIMULATED</code></td>
+                <td>AI 角色扮演或虚构访谈</td>
+                <td>只能用于练习和发现缺口</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout">
+          <strong>诚信边界：</strong>
+          模拟证据必须同时标记为未经验证，不能用于证明真实需求、市场规模或业务收益。
+        </div>
+
+        <h2>工作流完整，但执行深度不必相同</h2>
+        <ul>
+          <li>明确且低风险的小优化：问题说明、简要决策和验收标准即可。</li>
+          <li>常规需求：完整走过证据、决策和轻量 PRD。</li>
+          <li>高影响或高不确定性需求：增加真实访谈、数据分析和原型验证。</li>
+        </ul>
+        <p>
+          工作流的作用是让分析深度与风险匹配，而不是把每个需求都变成大型项目。
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>五阶段 PM 决策工作流</p>
+        <p><a href="../">返回首页</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
