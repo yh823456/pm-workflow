@@ -50,10 +50,24 @@
 ## 本地验证
 
 ```bash
-npm install
 npm test
 npm run docs:build
 ```
+
+站点使用零依赖静态 HTML、CSS 和 Node 构建脚本，不需要 VitePress、Dify、Coze 或第三方运行时。
+
+本地预览：
+
+```bash
+npm run docs:dev
+```
+
+## 发布状态
+
+- 版本：`v0.1.0`
+- 公开站点：由 GitHub Pages 从 `website-dist/` 自动部署
+- 当前证据：公开资料、模拟访谈和明确假设
+- 下一步：真实访谈、完整 Axure 原型、观测数据
 
 ## 使用边界
 
