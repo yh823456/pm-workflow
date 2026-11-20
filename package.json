@@ -1,0 +1,16 @@
+{
+  "name": "pm-decision-flow",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A small, evidence-aware workflow for turning ambiguous product requests into decisions and PRDs.",
+  "scripts": {
+    "test": "node --test",
+    "validate": "node scripts/validate.mjs",
+    "docs:dev": "vitepress dev website",
+    "docs:build": "vitepress build website"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
